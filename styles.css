@@ -1,0 +1,255 @@
+/* ==============================
+   RESET
+   ============================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ==============================
+   PODSTAWOWE STYLE
+   ============================== */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #222222;
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   HEADER / NAWIGACJA
+   ============================== */
+
+header {
+    width: 100%;
+    background-color: #222222;
+    padding: 20px;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.menu {
+    display: flex;
+    gap: 25px;
+}
+
+.menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+
+    transition: opacity 0.2s ease;
+}
+
+.menu a:hover {
+    opacity: 0.7;
+}
+
+
+/* ==============================
+   SEKCJA GŁÓWNA
+   ============================== */
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 80px 20px;
+
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h2 {
+    margin-bottom: 20px;
+
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.hero p {
+    margin-bottom: 30px;
+
+    font-size: 18px;
+}
+
+
+/* ==============================
+   PRZYCISK
+   ============================== */
+
+button {
+    padding: 12px 25px;
+
+    border: none;
+    border-radius: 5px;
+
+    background-color: #222222;
+    color: #ffffff;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: opacity 0.2s ease;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+/* ==============================
+   SEKCJA "O APLIKACJI"
+   ============================== */
+
+.about {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    padding: 80px 20px;
+
+    text-align: center;
+}
+
+.about h2 {
+    margin-bottom: 20px;
+
+    font-size: 32px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: 0 auto 15px;
+
+    font-size: 17px;
+}
+
+
+/* ==============================
+   FOOTER
+   ============================== */
+
+footer {
+    padding: 30px 20px;
+
+    text-align: center;
+
+    background-color: #222222;
+    color: #ffffff;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+/* ==============================
+   RESPONSYWNOŚĆ
+   ============================== */
+
+/* Tablety i mniejsze ekrany */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero {
+        min-height: 400px;
+        padding: 60px 20px;
+    }
+
+    .hero h2 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .about {
+        padding: 60px 20px;
+    }
+
+    .about h2 {
+        font-size: 28px;
+    }
+}
+
+
+/* Telefony */
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 15px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    .hero {
+        min-height: 350px;
+        padding: 50px 15px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    button {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .about {
+        padding: 50px 15px;
+    }
+
+    .about h2 {
+        font-size: 25px;
+    }
+
+    footer {
+        padding: 25px 15px;
+    }
+
+}
